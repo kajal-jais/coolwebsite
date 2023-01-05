@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            height: 501px;
+            width: 800px;
+            border: 1px solid black;
+            position: relative;
+            background: linear-gradient(to bottom right,orange,yellow);
+        }
+        section div{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 30px;
+            background-color: aqua;
+            animation-name: box1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes box1{
+            from{
+                background-color: yellow;
+                animation-timing-function: ease;
+            }
+            to{
+                transform: translateY(400px);                
+                background-color: blue;
+            }
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(245, 29, 29);
+            position: absolute;
+            left: 120px;
+            bottom: 1px;
+            animation-name: box2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            border-radius: 50%;
+        }
+        @keyframes box2{
+            from{
+               background-color: aqua;
+            }
+            to{
+               transform: translateY(-400px);
+            }
+        }
+        
+        .box3{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(104, 224, 34);
+            border-radius: 50%;
+            position: absolute;
+            left: 300px;
+            animation-name: box3;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        @keyframes box3{
+            from{
+               background-color: aqua;
+            }
+            to{
+               transform: translateY(400px);
+            }
+        }
+        .box4{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 450px;
+            bottom: 1px;
+            animation-name: box4;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            border-radius: 50%;
+            
+        }
+        @keyframes box4{
+            from{
+               background-color: aqua;
+            }
+            to{
+               transform: translateY(-400px);
+            }
+        }
+        .box5{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position: absolute;
+            left: 650px;
+            animation-name: box5;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            border-radius: 50%;
+            
+        }
+        @keyframes box5{
+            from{
+               background-color: aqua;
+            }
+            to{
+               transform: translateY(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <section>
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .outer-box {
+            height: 650px;
+            width: 100%;
+            background: url(travel.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            z-index: 2;
+        }
+
+        .inner-box {
+            box-sizing: border-box;
+            height: 500px;
+            width: 60%;
+            /* border: 2px solid black; */
+            background: linear-gradient(to bottom, transparent,rgb(159, 159, 168));
+            position: absolute;
+            top: 80px;
+            left: 260px;
+            z-index: -2;
+        }
+
+        nav {
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        nav ul {
+            width: 100%;
+            /* background-color: aquamarine; */
+            position: absolute;
+        }
+
+        nav ul li {
+            margin: 10px;
+            margin-left: 65px;
+            display: inline-block;
+        }
+
+        ul li a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            height: 350px;
+            width: 350px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            display: inline-block;
+        }
+
+        .content h1 {
+            margin-top: 10px;
+            margin-left: 15px;
+            word-spacing: 10px;
+            font-size: 50px;
+        }
+
+        .content h6 {
+            margin-left: 15px;
+            font-size: 15px;
+            margin-top: 7px;
+        }
+        .content p{
+            margin: 5px;
+            margin-top: 10px;
+            line-height: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        button {
+            box-sizing: border-box;
+            height: 30px;
+            width: 150px;
+            padding: 4px;
+            background-color: bisque;
+            position: absolute;
+            left: 80px;
+            bottom: 70px;
+            border-radius: 10px;
+            color: blue;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .content2 {
+            box-sizing: border-box;
+            height: 400px;
+            width: 320px;
+            /* border: 2px solid black; */
+            position: absolute;
+            left: 400px;
+            top: 80px;
+
+        }
+
+        .img1 {
+            height: 150px;
+            width: 250px;
+            /* border: 2px solid black; */
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            background-image: url(mountains.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img2 {
+            height: 150px;
+            width: 250px;
+            /* border: 2px solid black; */
+            position: absolute;
+            left: 30px;
+            top: 200px;
+            background-image: url(download.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="">Log In</a></li>
+                        <li><a href="">Sign up</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Reviews</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <div class="content">
+                <h1>EUROPEAN ROAD TRIP</h1>
+                <h6>Have been waiting for you</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, molestias! Id repudiandae impedit
+                    cum ipsum placeat voluptatum harum veniam saepe.</p>
+                <button>BOOK A CAR</button>
+            </div>
+            <div class="content2">
+                <div class="img1"></div>
+                <div class="img2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

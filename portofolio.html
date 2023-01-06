@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(255, 242, 227);
+        }
+        
+/* --------------styling to nav-bar--------------------- */
+        .top-block {
+            box-sizing: border-box;
+            background-color: black;
+            height: 50px;
+        }
+        .nav {
+            box-sizing: border-box;
+            padding: 10px;
+            position: relative;
+        }
+        .nav ul {
+            list-style: none;
+            position: absolute;
+            right: 10px;
+        }
+
+        .nav ul li {
+            /* width: 20px; */
+            box-sizing: border-box;
+            display: inline-block;
+            padding: 5px;
+            font-size: 20px;
+            margin-left: 20px;
+            border-right: 2px solid white;
+
+        }
+
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 2px;
+        }
+
+        .nav ul li a:hover {
+            border-bottom: 2px solid white;
+        }
+/* =============== end ============================ */
+
+/* -------------------styling of box inside contact-box------------------------ */
+        .contact-box ul {
+            box-sizing: border-box;
+            display: none;
+            background-color: rgb(29, 85, 85);
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            right: 20px;
+            margin-top: 5px;
+            border-radius: 20px;
+            padding: 10px;
+            /* color: black; */
+        }
+
+        .contact-box:hover ul {
+            display: block;
+        }
+
+        .contact-box ul li {
+            padding: 8px;
+            border: none;
+        }
+
+        .contact-box ul li:hover {
+            background-color: black;
+        }
+/* ========================end======================================= */
+/* ------------------------navbar ends------------------------------------ */
+
+/* ----------------------------2-box inside the big-box-------------------------*/ 
+        header section{
+            height: 450px;
+            width: 60%;
+            /* border: 2px solid black; */
+            background: linear-gradient(to bottom, grey, white);
+            /* position: absolute;
+            left: 200px;
+            top: 80px; */
+            margin: auto;
+            margin-top: 20px;
+            position: relative;
+        }
+/*============================Styling to the pic========================= */
+        .pic {
+            background-image: linear-gradient(to bottom, transparent, rgb(71, 71, 71)), url(pic.jpg);
+            height: 350px;
+            width: 42%;
+            display: inline-block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            margin-left: 20px;
+            margin-top: 40px;
+            border: 2px solid black;
+            transition: all 2s;
+        }
+
+        .pic:hover {
+            transform: scale(1.1);
+        }
+/* ====================end============================================== */
+
+/*------------------------styling of info box means "hello" and the content box-----------------*/
+        .info {
+            display: inline-block;
+            height: 300px;
+            width: 400px;
+            /* border: 2px solid black; */
+            position: absolute;
+            top: 50px;
+            margin: 20px;
+        }
+
+        .info h1 {
+            box-sizing: border-box;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .info h3 {
+            box-sizing: border-box;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        .info p {
+            margin-top: 10px;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+/* =========================end========================== */
+
+/* ----------------Styling of those the small-circle----------------------------- */
+        .ul {
+            list-style: none;
+            margin: 10px;
+        }
+
+        .ul>li {
+            height: 100px;
+            width: 100px;
+            box-sizing: border-box;
+            background-color: aqua;
+            margin: 5px;
+            display: inline-block;
+            padding-left: 25px;
+            padding-top: 35px;
+            border-radius: 50%;
+            transition: all;
+            transition-duration: 2s;
+        }
+        .ul>li:hover{
+            transform: scale(1.1);
+        }
+        
+        .ul li a {
+            text-decoration: none;
+        }
+        .ul>li:nth-child(1){
+            background-color: red;
+        }
+        .ul>li:nth-child(2){
+            background-color: orangered;
+        }
+        .ul>li:nth-child(3){
+            background-color: yellowgreen;
+        }
+/* -------------------end------------------- */
+
+
+/* styling to the contact list of 3rd-circle */
+        .inner-contact {
+            position: relative;
+        }
+        /*--------------------------------- Styling to ul box------------------------ */
+        .inner-contact ul {
+            box-sizing: border-box;
+            display: none;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 40px;
+            top: 70px;
+            border-radius: 20px;
+        }
+        /* styling to the list */
+        .inner-contact ul li {
+            margin-left: 6px;
+            margin-top: 3px;
+            padding: 5px;
+            list-style-type: none;
+        }
+        /* when we hover on box then tihs property will work */
+        .inner-contact:hover ul {
+            display: block;
+            background-color: blue;
+        }
+        /* on anchor tag */
+        .inner-contact ul li a{
+            /* text-color is white */
+            color: rgb(177, 157, 157); 
+        }
+        .inner-contact ul li:hover{
+            background-color: black;
+            border-radius: 12px;
+        }
+/* --------------------------------------- Styling end -----------------*/
+
+/* footer style */
+footer{
+            box-sizing: border-box;
+            height: 80px;
+            width: 100%;
+            background-color: aliceblue;
+            position: absolute;
+            bottom: 1px;
+        }
+        .bottom ul li{
+            display: inline-block;
+            height: 80px;
+            width: 140px;
+            /* margin: 20px; */
+            box-sizing: border-box;
+            /* background-color: yellow; */
+            font-weight: bold;
+        }
+        .bottom ul li:nth-child(1){
+            border-radius: 15px;
+            padding: 20px;
+            position: absolute;
+            left: 10px;
+        }
+        .bottom ul li:nth-child(2){
+            border-radius: 15px;
+            padding: 20px;
+            position: absolute;
+            left: 400px;
+        }
+        .bottom ul li:nth-child(3){
+            border-radius: 15px;
+            padding: 30px;
+            position: absolute;
+            right: 30%;
+        }
+        .bottom ul li:nth-child(4){
+            border-radius: 15px;
+            padding: 30px;
+            position: absolute;
+            right:50px;
+        }
+        /* end of styling to the footer */
+    </style>
+</head>
+
+<body>
+    <section class="top-block">
+        <nav class="nav">
+            <ul>
+                <li><a href="">Resume</a></li>
+                <li><a href="">Project</a></li>
+                <li class="contact-box"><a href="">Contact
+                        <ul>
+                            <li>Whatsapp</li>
+                            <li>Github</li>
+                            <li>LinkedIn</li>
+                        </ul>
+                    </a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <section>
+            <div class="pic"></div>
+            <div class="info">
+                <h1>Hello</h1>
+                <h3>A bit About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi cumque voluptatem voluptate commodi
+                    asperiores quidem eum! Necessitatibus cumque aliquam nisi.</p>
+                <ul class="ul">
+                    <li> <a href="">Resume</a></li>
+                    <li> <a href="">Projects</a></li>
+                    <li class="inner-contact"> <a href="">Contact
+                            <ul>
+                                <li><a href="">Whatsapp</a></li>
+                                <li><a href="">Github</a></li>
+                                <li><a href="">LinkedIn</a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <footer>
+            <div class="bottom">
+                <ul>
+                    <li>Phone<br>123-456-7890</li>
+                    <li>Email <br>info@myself.com</li>
+                    <li>Follow me</li>
+                    <li>Created by</li>
+                </ul>
+            </div>
+    </footer>
+
+</body>
+
+</html>
